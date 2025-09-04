@@ -3,60 +3,156 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Web Developer</title>
+  <title>Joseph Kramer — Front-End Developer (Vue · React · Laravel)</title>
+  <meta name="description" content="Front-end developer specializing in Vue.js, React, Laravel, testing (Vitest/Jest), and AWS.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#0b0c0f;--fg:#e8eaed;--muted:#9aa0a6;--card:#15171c;--acc:#8ab4f8}
-    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--fg)}
-    .wrap{max-width:920px;margin:0 auto;padding:28px}
-    .card{background:var(--card);border-radius:16px;padding:28px;margin:18px 0}
-    h1{font-size:32px;margin:0 0 6px}h2{font-size:18px;margin:0 0 10px;color:var(--muted);font-weight:500;letter-spacing:.4px;text-transform:uppercase}
-    p,li{line-height:1.6;color:#e3e5e8}a{color:var(--acc);text-decoration:none}
+    :root{
+      --bg:#0b0c0f;--fg:#e8eaed;--muted:#9aa0a6;--card:#15171c;--acc:#8ab4f8;--border:#2d333b
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,Arial,sans-serif}
+    .wrap{max-width:980px;margin:0 auto;padding:28px}
+    a{color:var(--acc);text-decoration:none}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;margin:18px 0}
+    h1{font-size:34px;margin:0 0 6px}
+    h2{font-size:18px;margin:0 0 12px;color:var(--muted);font-weight:600;letter-spacing:.4px;text-transform:uppercase}
+    p{line-height:1.7;margin:8px 0}
+    ul{margin:10px 0 0 18px}
+    li{margin:6px 0;line-height:1.6}
     .grid{display:grid;gap:18px}
-    @media(min-width:800px){.grid{grid-template-columns:1.2fr .8fr}}
-    .pill{display:inline-block;background:#1f232b;color:#c9d1d9;border:1px solid #2d333b;padding:6px 10px;border-radius:999px;margin:6px 6px 0 0;font-size:14px}
+    @media(min-width:860px){.grid{grid-template-columns:1.2fr .8fr}}
+    .pill{display:inline-block;background:#1f232b;color:#c9d1d9;border:1px solid var(--border);padding:6px 10px;border-radius:999px;margin:6px 6px 0 0;font-size:14px}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .meta{color:var(--muted);font-size:14px}
     .footer{color:var(--muted);font-size:14px;margin-top:24px}
+    .job{margin-bottom:14px}
+    .job h3{margin:0 0 4px;font-size:16px}
+    .job .meta{margin-bottom:8px}
+    .contact a{margin-right:10px}
+    /* subtle focus ring */
+    a:focus-visible, button:focus-visible {outline:2px solid var(--acc);outline-offset:2px;border-radius:6px}
   </style>
 </head>
 <body>
   <div class="wrap">
+    <!-- Header -->
     <header class="card">
-      <h1>Your Name</h1>
-      <p>Mid/Senior Web Developer — Vue 3 · Laravel · AWS · Testing</p>
-      <p>
-        <a href="https://github.com/yourhandle">GitHub</a> ·
-        <a href="https://www.linkedin.com/in/yourhandle/">LinkedIn</a> ·
-        <a href="mailto:you@example.com">you@example.com</a>
+      <h1>Joseph Kramer</h1>
+      <p class="meta">Palatine, IL • Front-End Developer</p>
+      <div class="contact">
+        <!-- Add LinkedIn/GitHub when ready -->
+        <!-- <a href="https://github.com/YOUR_GITHUB">GitHub</a> · <a href="https://www.linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a> ·  -->
+        <a href="mailto:joekramer.bis@gmail.com">joekramer.bis@gmail.com</a> ·
+        <a href="tel:+18478998936">847-899-8936</a>
+      </div>
+      <p style="margin-top:10px">
+        I build reliable, accessible web apps with Vue, React, and Laravel—backed by testing (Vitest/Jest), performance work, and pragmatic DX.
+        Strong on component architecture, API integration, CI/CD, and production stability (Sentry).
       </p>
     </header>
 
     <main class="grid">
+      <!-- Left column -->
       <section class="card">
-        <h2>About</h2>
-        <p>I build reliable, well-tested web apps. Focus: Vue 3 components, Laravel APIs, CI/CD on AWS, and pragmatic DX.</p>
+        <h2>Experience</h2>
 
-        <h2>Selected Skills</h2>
-        <div>
-          <span class="pill">Vue 3</span><span class="pill">TypeScript</span><span class="pill">Pinia</span>
-          <span class="pill">Vitest</span><span class="pill">Laravel</span><span class="pill">REST</span>
-          <span class="pill">MySQL/Postgres</span><span class="pill">AWS</span><span class="pill">CI/CD</span><span class="pill">TDD</span>
+        <div class="job">
+          <h3>Front-End Developer — Integrity Express Logistics</h3>
+          <div class="meta">Cincinnati, OH • Jul 2022 – Present</div>
+          <ul>
+            <li>Develop and optimize Vue.js components for a logistics delivery platform; integrate REST APIs and Laravel services.</li>
+            <li>Led adoption of Vitest and built a Vue component library to improve consistency and speed.</li>
+            <li>Integrated Sentry for front-end error tracking, significantly reducing recurring production issues.</li>
+            <li>Styled with Tailwind CSS for maintainable, performant UI; collaborated closely with back-end to debug API responses.</li>
+            <li>Maintained and improved two legacy React apps (one highly tested, one minimally documented).</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Front-End React / Next.js Developer — Precise Presence</h3>
+          <div class="meta">Chicago, IL • 2021 – 2022</div>
+          <ul>
+            <li>Built React/Next.js components to improve UI performance and engagement; migrated routing to Next.js.</li>
+            <li>Integrated Tailwind CSS and introduced Jest to strengthen reliability.</li>
+            <li>Implemented GraphQL via Relay to improve data fetching efficiency and reduce API load.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>JavaScript Developer — Kids-In-Danger (Recall.it Chrome Extension)</h3>
+          <div class="meta">Chicago, IL • 2021</div>
+          <ul>
+            <li>Shipped a feature that flags recalled products on Amazon using vanilla JS and federal recall APIs; resolved data mismatches.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>IT Specialist / PHP Developer Intern — Christian Liberty School Systems</h3>
+          <div class="meta">Arlington Heights, IL • 2019 – 2020</div>
+          <ul>
+            <li>Maintained/enhanced front-end for a PHP-based student testing platform; assisted with Laravel and DB tasks.</li>
+          </ul>
         </div>
       </section>
 
+      <!-- Right column -->
       <aside class="card">
-        <h2>Projects</h2>
-        <p>Case studies coming soon:</p>
+        <h2>Skills</h2>
+        <div class="row" aria-label="Core skills">
+          <span class="pill">Vue.js</span>
+          <span class="pill">React</span>
+          <span class="pill">Next.js</span>
+          <span class="pill">JavaScript (ES6+)</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">Laravel (PHP)</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">GraphQL (Relay)</span>
+          <span class="pill">Tailwind CSS</span>
+          <span class="pill">CSS Grid/Flexbox</span>
+          <span class="pill">Responsive Design</span>
+          <span class="pill">Vitest</span>
+          <span class="pill">Jest</span>
+          <span class="pill">Storybook</span>
+          <span class="pill">Sentry</span>
+          <span class="pill">MySQL</span>
+          <span class="pill">AWS</span>
+          <span class="pill">CI/CD</span>
+          <span class="pill">TDD</span>
+        </div>
+
+        <h2 style="margin-top:18px">Projects & Impact</h2>
         <ul>
-          <li><strong>Component Library (Vue 3 + Vitest):</strong> Accessible inputs, tables, modals with tests.</li>
-          <li><strong>Laravel API + Auth:</strong> Token-based CRUD service with feature tests.</li>
-          <li><strong>Analytics Dashboard:</strong> Vite + Vue + charts, API integration, error boundaries.</li>
+          <li><strong>Vue Component Library:</strong> Reusable, tested components that improved consistency and delivery speed.</li>
+          <li><strong>Front-End Testing Initiative:</strong> Led Vitest adoption for Vue; added Jest in prior role.</li>
+          <li><strong>Sentry Integration:</strong> Reduced recurring front-end production errors, boosting stability.</li>
+          <li><strong>Next.js Migration:</strong> Key role in moving from React to Next.js to improve performance/maintainability.</li>
+          <li><strong>Recall.it:</strong> Chrome extension feature highlighting recalled products via federal APIs.</li>
+        </ul>
+
+        <h2 style="margin-top:18px">Education & Certifications</h2>
+        <ul>
+          <li><strong>BAS</strong>, National Louis University</li>
+          <li><strong>Full Stack JavaScript Bootcamp</strong>, Northwestern Extension (2018–2019)</li>
+          <li><strong>AWS Certified Solutions Architect</strong></li>
         </ul>
       </aside>
     </main>
 
-    <p class="footer">© <span id="y"></span> Your Name</p>
+    <section class="card">
+      <h2>What I’m Looking For</h2>
+      <p>
+        Mid/Senior front-end or full-stack role where I can own components, raise testing standards,
+        collaborate deeply with back-end teams, and ship measurable improvements to UX, performance, and reliability.
+      </p>
+    </section>
+
+    <p class="footer">© <span id="y"></span> Joseph Kramer</p>
   </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear()
+  </script>
 </body>
 </html>
