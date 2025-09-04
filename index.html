@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0c0f;--fg:#e8eaed;--muted:#9aa0a6;--card:#15171c;--acc:#8ab4f8}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+    .wrap{max-width:920px;margin:0 auto;padding:28px}
+    .card{background:var(--card);border-radius:16px;padding:28px;margin:18px 0}
+    h1{font-size:32px;margin:0 0 6px}h2{font-size:18px;margin:0 0 10px;color:var(--muted);font-weight:500;letter-spacing:.4px;text-transform:uppercase}
+    p,li{line-height:1.6;color:#e3e5e8}a{color:var(--acc);text-decoration:none}
+    .grid{display:grid;gap:18px}
+    @media(min-width:800px){.grid{grid-template-columns:1.2fr .8fr}}
+    .pill{display:inline-block;background:#1f232b;color:#c9d1d9;border:1px solid #2d333b;padding:6px 10px;border-radius:999px;margin:6px 6px 0 0;font-size:14px}
+    .footer{color:var(--muted);font-size:14px;margin-top:24px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="card">
+      <h1>Your Name</h1>
+      <p>Mid/Senior Web Developer — Vue 3 · Laravel · AWS · Testing</p>
+      <p>
+        <a href="https://github.com/yourhandle">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/yourhandle/">LinkedIn</a> ·
+        <a href="mailto:you@example.com">you@example.com</a>
+      </p>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>About</h2>
+        <p>I build reliable, well-tested web apps. Focus: Vue 3 components, Laravel APIs, CI/CD on AWS, and pragmatic DX.</p>
+
+        <h2>Selected Skills</h2>
+        <div>
+          <span class="pill">Vue 3</span><span class="pill">TypeScript</span><span class="pill">Pinia</span>
+          <span class="pill">Vitest</span><span class="pill">Laravel</span><span class="pill">REST</span>
+          <span class="pill">MySQL/Postgres</span><span class="pill">AWS</span><span class="pill">CI/CD</span><span class="pill">TDD</span>
+        </div>
+      </section>
+
+      <aside class="card">
+        <h2>Projects</h2>
+        <p>Case studies coming soon:</p>
+        <ul>
+          <li><strong>Component Library (Vue 3 + Vitest):</strong> Accessible inputs, tables, modals with tests.</li>
+          <li><strong>Laravel API + Auth:</strong> Token-based CRUD service with feature tests.</li>
+          <li><strong>Analytics Dashboard:</strong> Vite + Vue + charts, API integration, error boundaries.</li>
+        </ul>
+      </aside>
+    </main>
+
+    <p class="footer">© <span id="y"></span> Your Name</p>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
